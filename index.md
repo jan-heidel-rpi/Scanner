@@ -1,6 +1,13 @@
 ## Welcome to the Documentation
 
-You can use the [editor on GitHub](https://github.com/jan-heidel-rpi/Scanner/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# 1. Fast Scans
+Es gibt vier Fast scans:
+Der Basic Fastscan scannt die ersten 100 ports.
+Der Mormalscan scannt die ersten 1000 ports.
+der Hardscan scannt alle 65535 ports.
+Der Ping scan scan nur die ip adressen, ermittel die mac und den vendor und den hostnamen
+
+Alle Scans brauchen unterschiedlich lang. Der schnellste ist der Ping scan.
 
 ### Markdown
 

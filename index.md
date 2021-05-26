@@ -2,9 +2,13 @@
 
 # 1. Fast Scans
 Es gibt vier Fast scans:
+
 Der Basic Fastscan scannt die ersten 100 ports.
+
 Der Mormalscan scannt die ersten 1000 ports.
-der Hardscan scannt alle 65535 ports.
+
+Der Hardscan scannt alle 65535 ports.
+
 Der Ping scan scan nur die ip adressen, ermittel die mac und den vendor und den hostnamen
 
 Alle Scans brauchen unterschiedlich lang. Der schnellste ist der Ping scan.

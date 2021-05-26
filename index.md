@@ -13,6 +13,8 @@ Der Ping scan scan nur die ip adressen, ermittel die mac und den vendor und den 
 
 Alle Scans brauchen unterschiedlich lang. Der schnellste ist der Ping scan.
 
+Die Fast scan müssen vor der ersten benutzung configuriert werden.
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

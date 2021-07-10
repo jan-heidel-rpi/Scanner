@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>585</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../lupe-grafik-free-download.jpg</normaloff>../lupe-grafik-free-download.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="aktualisieren">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>520</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load other result</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>348</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="basicScan">
+       <property name="text">
+        <string>Basic scan</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="NormalScan">
+       <property name="text">
+        <string>&amp;Normal scan</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="HardScan">
+       <property name="text">
+        <string>Hard scan</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pingScan">
+       <property name="text">
+        <string>Ping scan</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="tabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>571</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>WhatsThisCursor</cursorShape>
+    </property>
+    <column>
+     <property name="text">
+      <string>IP</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Mac Adresse</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Hostname</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Hersteller</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Offene ports</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>585</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menu_New_task">
+     <property name="title">
+      <string>&amp;New task</string>
+     </property>
+    </widget>
+    <addaction name="menu_New_task"/>
+    <addaction name="actionNew_network"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_Network"/>
+    <addaction name="separator"/>
+    <addaction name="actionBeenden"/>
+   </widget>
+   <widget class="QMenu" name="menuReports">
+    <property name="title">
+     <string>Reports</string>
+    </property>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionDoc"/>
+    <addaction name="separator"/>
+    <addaction name="actionUpdate_vendor"/>
+    <addaction name="actionEdit_config"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menutools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionputty"/>
+    <addaction name="actionnetwork_speed"/>
+   </widget>
+   <widget class="QMenu" name="menuAttacks">
+    <property name="title">
+     <string>Attacks</string>
+    </property>
+    <addaction name="actionSSh_Brute_Force"/>
+    <addaction name="actionMac_Flood"/>
+    <addaction name="separator"/>
+    <addaction name="actionscan_one_ip_3"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuReports"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menutools"/>
+   <addaction name="menuAttacks"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_config">
+   <property name="text">
+    <string>Open config</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionNew_Device">
+   <property name="text">
+    <string>New Device</string>
+   </property>
+  </action>
+  <action name="actionMobile_Device">
+   <property name="text">
+    <string>Mobile Device</string>
+   </property>
+  </action>
+  <action name="actionDoc">
+   <property name="text">
+    <string>&amp;Doc</string>
+   </property>
+  </action>
+  <action name="actionupload_confing">
+   <property name="text">
+    <string>upload confing</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+U</string>
+   </property>
+  </action>
+  <action name="actionUpdate_vendor">
+   <property name="text">
+    <string>Update vendor</string>
+   </property>
+  </action>
+  <action name="actionputty">
+   <property name="text">
+    <string>putty</string>
+   </property>
+  </action>
+  <action name="actionBeenden">
+   <property name="text">
+    <string>Beenden</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionEdit_config">
+   <property name="text">
+    <string>Edit config</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSSh_Brute_Force">
+   <property name="text">
+    <string>SSh Brute Force</string>
+   </property>
+  </action>
+  <action name="actionMac_Flood">
+   <property name="text">
+    <string>Mac Flood</string>
+   </property>
+  </action>
+  <action name="actionNew_network">
+   <property name="text">
+    <string>New network</string>
+   </property>
+  </action>
+  <action name="actionOpen_Network">
+   <property name="text">
+    <string>Open Network</string>
+   </property>
+  </action>
+  <action name="actionnetwork_speed">
+   <property name="icon">
+    <iconset>
+     <selectedon>../icon´s/tacho.png</selectedon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>network speed</string>
+   </property>
+  </action>
+  <action name="actionscan_one_ip">
+   <property name="text">
+    <string>scan one ip</string>
+   </property>
+  </action>
+  <action name="actionscan_one_ip_2">
+   <property name="text">
+    <string>scan one ip</string>
+   </property>
+  </action>
+  <action name="actionscan_one_ip_3">
+   <property name="text">
+    <string>scan one ip</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionBeenden</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
